@@ -15,7 +15,7 @@ $(document).ready(function () {
         { src: 'kepek/9.jpg' }
        ],
        overlay: "overlays/03.png",
-       transition: [ 'swirlLeft2', 'zoomOut','swirlRight2', 'swirlLeft','swirlRight', 'zoomIn', 'zoomOut2' ],
+       transition: [ 'swirlLeft2', 'zoomOut','swirlRight2', 'swirlLeft','swirlRight', 'zoomOut2' ],
        animation: 'random'
       }); 
 });
