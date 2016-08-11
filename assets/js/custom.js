@@ -41,19 +41,19 @@ interval: 8000 //TIME IN MILLI SECONDS
 /*====================================
 VAGAS SLIDESHOW SCRIPTS
 ======================================*/
-$.vegas('slideshow', 
-{backgrounds: [
-{ src: 'KEPEK/1.jpg', delay: 11100 , fade: 3000 },
-{ src: 'KEPEK/2.jpg', fade: 3000, delay: 11000 },
-{ src: 'KEPEK/3.jpg', fade: 3000, delay: 11000 },
-{ src: 'KEPEK/4.jpg', fade: 3000, delay: 11000 },
-{ src: 'KEPEK/5.jpg', fade: 3000, delay: 11000 },
-{ src: 'KEPEK/6.jpg', fade: 3000, delay: 11000 },
-{ src: 'KEPEK/7.jpg', fade: 3000, delay: 11000 },
-{ src: 'KEPEK/8.jpg', fade: 3000, delay: 11000 },
-]
-}
-)('overlay');
+// $.vegas('slideshow', 
+// {backgrounds: [
+// { src: 'KEPEK/1.jpg', delay: 11100 , fade: 3000 },
+// { src: 'KEPEK/2.jpg', fade: 3000, delay: 11000 },
+// { src: 'KEPEK/3.jpg', fade: 3000, delay: 11000 },
+// { src: 'KEPEK/4.jpg', fade: 3000, delay: 11000 },
+// { src: 'KEPEK/5.jpg', fade: 3000, delay: 11000 },
+// { src: 'KEPEK/6.jpg', fade: 3000, delay: 11000 },
+// { src: 'KEPEK/7.jpg', fade: 3000, delay: 11000 },
+// { src: 'KEPEK/8.jpg', fade: 3000, delay: 11000 },
+// ]
+// }
+// )('overlay');
 
 
 /*====================================
