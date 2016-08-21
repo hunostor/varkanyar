@@ -24,7 +24,6 @@ GOOGLE FONT
 @import url(https://fonts.googleapis.com/css?family=Lemonada); 
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Infant); 
 @import url(https://fonts.googleapis.com/css?family=Amarante); 
-@import url(https://fonts.googleapis.com/css?family=Signika+Negative:700);
 
 /* FREE GOOGLE FONT */
 
@@ -74,38 +73,9 @@ font-size: 2.4em;
 font-family: 'Amarante', sans-serif;
 
 font-weight: bold;
-text-shadow: 3px 3px 8px rgba(0,0,0,0.56),
--1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
+text-shadow: 3px 3px 8px rgba(0,0,0,0.56);
 }
 
-h6 {
-color: rgb(255, 204, 65);
-font-size: 1.8em; 
-font-family: 'Amarante', sans-serif;
-
-font-weight: bold;
-text-shadow: 3px 3px 8px rgba(0,0,0,0.56),
--1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
-}
-
-h3 {
-color: #FFF;
-font-size: 1.3em; 
-/*font-family: 'Amarante', sans-serif;
-
-font-weight: bold;*/
-text-shadow: 1px 1px 8px rgba(0,0,0,0.56),*/
--1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
 /* =============================================================
 CUSTOM BUTTON STYLES
 ============================================================ */
@@ -254,34 +224,20 @@ padding: 5px 10px 10px 5px;
 }
 
 #carousel-slider h1 {
-
-color: rgba(210, 34, 35, 0.8);
-font-size: 4.4em; 
-/*font-family: 'Amarante', sans-serif;*/
-
-
-    font-family: 'Signika Negative', sans-serif;
-
-
+color: rgba(255,117,63,1);
+font-size: 1.6em; 
+font-family: 'Amarante', sans-serif;
 font-weight: bold;
-text-shadow: 2px 2px 6px rgba(0,0,0,0.46),
-  -1px -1px 0 rgba(230, 100, 100, 1),
-    1px -1px 0 rgba(230, 100, 100, 1),
-    -1px 1px 0 rgba(230, 100, 100, 1),
-    1px 1px 0 rgba(230, 100, 100, 1);
+text-shadow: 2px 2px 6px rgba(0,0,0,0.46);
 }
 
 #carousel-slider p {
 
 color: rgba(255, 204, 65, 1);
 font-family: 'Amarante', sans-serif;
-font-size: 1.2em;
+font-size: 1.3em;
 font-weight: bold;
-text-shadow: 2px 2px 6px rgba(0,0,0,0.46),
-  -1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
+text-shadow: 2px 2px 6px rgba(0,0,0,0.46);
 }
 
 #carousel-slider .carousel-wrapper {
@@ -290,7 +246,7 @@ padding: 5px;
  height: 360px;
 background-color: rgba(251, 237, 208, 0.01);
 }
-/*
+
 #carousel-slider .carousel-wrapper:hover {
 padding: 5px;
 
@@ -307,7 +263,7 @@ text-shadow: 3px 3px 8px rgba(0,0,0,00.56);
 
 text-shadow: 3px 3px 8px rgba(0,0,0,0.56);
 }
-*/
+
 /* =============================================================
 SERVICES SECTION STYLES
 ============================================================ */
@@ -361,13 +317,13 @@ text-shadow: 3px 3px 8px rgba(0,0,0,0.56);
 }
 
 #services .service-wrapper2:hover {
--webkit-transform: scale(1.05);
--moz-transform: scale(1.05);
--ms-transform: scale(1.05);
--o-transform: scale(1.05);
-transform: scale(1.05);
+-webkit-transform: scale(1.2);
+-moz-transform: scale(1.2);
+-ms-transform: scale(1.2);
+-o-transform: scale(1.2);
+transform: scale(1.2);
 background-color: rgba(66, 66, 66, 0.00);
-text-shadow: 5px 5px 12px rgba(0,0,0,0.46);
+text-shadow: 3px 3px 8px rgba(0,0,0,0.56);
 
 }
 
@@ -375,11 +331,7 @@ text-shadow: 5px 5px 12px rgba(0,0,0,0.46);
 color: rgb(255, 204, 65);
 font-size: 1.5em; 
 font-family: 'Amarante', sans-serif;
-text-shadow: 3px 3px 8px rgba(0,0,0,0.56),
--1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
+text-shadow: 3px 3px 8px rgba(0,0,0,0.56);
 }
 
 #services h3 {
@@ -388,11 +340,7 @@ font-size: 1.9em;
 font-family: 'Amarante', sans-serif;
 
 font-weight: bold;
-text-shadow: 3px 3px 8px rgba(0,0,0,0.56),
--1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
+text-shadow: 3px 3px 8px rgba(0,0,0,0.56);
 }
 
 #services h2 {
@@ -401,11 +349,7 @@ font-size: 2.4em;
 font-family: 'Amarante', sans-serif;
 
 font-weight: bold;
-text-shadow: 3px 3px 8px rgba(0,0,0,0.56),
--1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
+text-shadow: 3px 3px 8px rgba(0,0,0,0.56);
 }
 
 #services h2:hover {
@@ -414,26 +358,18 @@ font-size: 2.4em;
 font-family: 'Amarante', sans-serif;
 
 font-weight: bold;
-text-shadow: 6px 6px 18px rgba(0,0,0,0.56),
--1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
+text-shadow: 6px 6px 18px rgba(0,0,0,0.56);
 
 }
 
 #services p {
 
 color: rgb(222, 222, 222);
-font-size: 1.2em; 
+font-size: 1.5em; 
 font-family: 'Amarante', sans-serif;
 
 
-text-shadow: 1px 1px 4px rgba(0,0,0,0.56),
--1px -1px 0 #886644,
-    1px -1px 0 #886644,
-    -1px 1px 0 #886644,
-    1px 1px 0 #886644;
+text-shadow: 1px 1px 4px rgba(0,0,0,0.56);
 text-align: left;
 }
 #services  .service-wrapper2 p {
@@ -487,74 +423,13 @@ transition: all 0.5s ease-in-out;
 }
 #services .service-wrapper2 ikek:hover {
 margin: 5px;
-color: rgb(131, 199, 248);
+color: rgb(131, 199, 238);
 font-size: 85px;
  width: 150px;
  height: 150px;
 text-shadow: 8px 8px 15px #000000;
-}
 
-#services .service-wrapper2 izold {
-margin: 5px;
-color: 	rgb( 60, 159, 93);
-font-size: 80px;
-text-shadow: 2px 2px 4px #000000;
- width: 150px;
- height: 150px;
--webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-}
-#services .service-wrapper2 izold:hover {
-margin: 5px;
-color: rgb( 60, 199, 113);
-font-size: 85px;
- width: 150px;
- height: 150px;
-text-shadow: 8px 8px 15px #000000;
-}
 
-#services .service-wrapper2 ipiros {
-margin: 5px;
-color: rgb( 220, 99, 83);
-font-size: 80px;
-text-shadow: 2px 2px 4px #000000;
- width: 150px;
- height: 150px;
--webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-}
-#services .service-wrapper2 ipiros:hover {
-margin: 5px;
-color: rgb( 240, 99, 83);
-font-size: 85px;
- width: 150px;
- height: 150px;
-text-shadow: 8px 8px 15px #000000;
-}
-
-#services .service-wrapper2 isarga {
-margin: 5px;
-color: rgba(255, 204, 65, 1);
-font-size: 80px;
-text-shadow: 2px 2px 4px #000000;
- width: 150px;
- height: 150px;
--webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-}
-#services .service-wrapper2 isarga:hover {
-margin: 5px;
-color: rgba(255, 224, 85, 1);
-font-size: 85px;
- width: 150px;
- height: 150px;
-text-shadow: 8px 8px 15px #000000;
 }
 
 /*============================
@@ -666,7 +541,7 @@ border-radius: 5px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 margin-bottom: 40px;
-background-color: rgba(58, 56, 198, 0.25);
+background-color: rgba(18, 36, 88, 0.15);
 cursor: pointer;
 -webkit-transition: all 0.9s ease-in-out;
 -moz-transition: all 0.9s ease-in-out;
@@ -678,7 +553,7 @@ box-shadow: 2px 2px 8px #000;
 }
 
 #work .work-wrapper:hover {
-background-color: rgba(58, 56, 148, 0.65);
+background-color: rgba(18, 36, 88, 0.75);
 border: 1px solid rgb(255, 204, 65);
 
 opacity: .80; /* standard: ff gt 1.5, opera, safari */
@@ -705,7 +580,7 @@ TEAM SECTION STYLES
 .team-wrapper {
 overflow-x: hidden;
 position: relative;
-background-color: rgba(58, 56, 198, 0.25);
+background-color: rgba(66, 66, 66, 0.25);
 -webkit-transition: all 0.2s ease;
 -moz-transition: all 0.2s ease;
 -ms-transform: all 0.2s ease;
@@ -723,7 +598,7 @@ border-radius: 5px 5px 5px 5px;
 -ms-transform: scale(1.05);
 -o-transform: scale(1.05);
 transform: scale(1.05);
-background-color: rgba(58, 56, 128, 0.55);
+background-color: rgba(33, 33, 66, 0.55);
 box-shadow: 5px 5px 12px #000;
 }
 .team-wrapper .team-inner {
@@ -731,8 +606,8 @@ background-size: cover;
 background-position: center;
 -moz-background-size: cover;
 -webkit-background-size: cover;
-padding: 250px 0 20px;
-background-image: url('../img/girl-big.jpg');*/
+padding: 250px 0 10px;
+/*background-image: url('../img/girl-big.jpg');*/
 
 }
 
@@ -790,26 +665,6 @@ text-shadow: 1px 1px 2px #333;
 display: block;
 margin-top: 5px;
 }
-
-#submit {
-	/* background:url(images/submit.png); */
-	background-color:#883333;
-	width:127px;
-	height:48px;
-	text-align: center;
-	/* text-indent:-9999px; */
-	border:none;
-	margin-top:20px;
-	cursor:pointer;
-}
-
-/* Styles the submit hover */	
-#submit:hover {
-	color:#fff;
-	background-color: #bb3333;
-	opacity:0.9;
-}
-
 .footer-div {
 padding-top:25px;
 }
