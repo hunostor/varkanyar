@@ -28,7 +28,14 @@ GOOGLE FONT
 
 /* FREE GOOGLE FONT */
 
-
+/**
+ * MEDIA QUERYES
+ */
+@media (max-width: 500px) {
+    #carousel-slider h1.carousel-main-title {
+        font-size: 3em;
+    }
+}
 
 
 /* =============================================================
