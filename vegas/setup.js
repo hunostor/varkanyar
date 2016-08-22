@@ -3,7 +3,7 @@ $(document).ready(function () {
     var w = window.innerWidth;
     if (w > 600) { // 600 pixel felett ez a blokk hajtodik vegre
     	$('body').vegas({
-        delay: 15000,
+        delay: 19000,
         transition: 'fade',
         transitionDuration: 2000,
         slides: [
@@ -14,10 +14,8 @@ $(document).ready(function () {
             { src: 'kepek/banner/5.jpg' },
             { src: 'kepek/banner/6.jpg' },
             { src: 'kepek/banner/7.jpg' },
-            { src: 'kepek/banner/8.jpg' },
-            { src: 'kepek/banner/9.jpg' },
-    		{ src: 'kepek/banner/10.jpg' },
-            { src: 'kepek/banner/11.jpg' }
+            { src: 'kepek/banner/8.jpg' }
+
            ],
            animation: 'random'
           });
