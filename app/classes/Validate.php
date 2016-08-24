@@ -56,4 +56,14 @@ class Validate
 	{
 		return trim($dirtyData);
 	}
+
+    /**
+     * Gets the value of validData.
+     *
+     * @return mixed
+     */
+    public function getValidData()
+    {
+        return $this->validData;
+    }
 }

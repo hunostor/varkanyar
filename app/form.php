@@ -14,8 +14,12 @@ if (isset($_POST)) {
 
 
 $cleanData = new Validate($dirtyData);
+$to = 'poroszkai.attila.live.com';
+$subject = 'Hello Mail';
 
-var_dump($cleanData);
+
+
+var_dump($cleanData->getValidData());
 // vissszairanyit a kezdo oldalra
 // $redirect = new Redirect();
 
