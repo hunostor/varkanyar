@@ -1,11 +1,10 @@
-
 <form action="app/form.php" method="post" enctype="multipart/form-data">
 		        
         <h1 class="title">Kapcsolat</h1>
     
         
 		<div class="form-group">
-	    <label for="exampleInputEmail1">Név</label>
+	    <label for="name">Név</label>
 	    <input type="text" class="form-control" id="name" name="name" placeholder="Név" required="required">
 	  </div>
 	  <div class="form-group">

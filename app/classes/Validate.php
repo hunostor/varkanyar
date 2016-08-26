@@ -11,7 +11,7 @@ class Validate
 	public function __construct($dirtyDataArray)
 	{	
 		if (! $this->validateEmail ($dirtyDataArray['email'])) {
-			die('Nem ervenyes az emailcim amit megadtal!');
+			throw new Exception('A megadott emailcím formátuma nem érvényes!');			
 		}
 
 		foreach ($dirtyDataArray as $key => $value) {
@@ -40,7 +40,6 @@ class Validate
 	protected function validateEmail($email)
 	{
 		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		  $emailErr = "Invalid email format";
 		  return false;
 		} else {
 			return true;

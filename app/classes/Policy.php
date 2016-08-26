@@ -20,9 +20,10 @@ class Policy
 	public function checkCookie()
 	{
 		if (isset($_COOKIE[$this->sentCookieName])) {
-			return true;
+			throw new Exception('Spamvédelmi okokból nem lehet csak 20 percenként új üzenetet küldeni.');
+			return false;		
 		} else {
-			return false;
+			return true;
 		}
 	}
 

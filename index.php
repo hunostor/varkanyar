@@ -6,7 +6,11 @@
  * 			   
  *       2016 Minden jog fenntartva!
  */
+ini_set('display_errors', 'On');
 
-require 'app/form.php';
+session_start();
 
-require 'app/view/template.php';
+header('Content-Type: text/html; charset=utf-8');
+
+require_once 'vendor/autoload.php';
+require_once 'app/view/template.php';

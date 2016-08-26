@@ -30,6 +30,10 @@ class SendMail
 		$this->setSubject();
 		$this->setMessage($cleanData);
 		$this->sendCheck = $this->goMail();
+		
+		if ($this->sendCheck == false) {
+			throw new Exception('Email küldés nem sikerült');
+		}
 	}
 
 	/**

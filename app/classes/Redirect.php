@@ -13,7 +13,7 @@ class Redirect
 	public function __construct($url = null)
 	{
 		$this->setBaseUrl();
-		return header('Location: ' . BASE_URL . $url);
+		return header('Location: ' . BASE_URL . $url . '#contact');
 	}
 
 	private function setUrlParts()
