@@ -76,4 +76,9 @@ class SendMail
     {
         return $this->sendCheck;
     }
+
+    public function getMessage()
+    {
+    	return $this->message;
+    }
 }

@@ -13,7 +13,16 @@ if (!empty($_POST)) {
 	];
 	$cleanData = new Validate($dirtyData);
 	
-	$mail = new SendMail($cleanData->getValidData());
+	$policy = new Policy;
+
+	if ($policy->checkCookie()) {
+		die('Spam megelozesi okokbol csak 1 percenkent kuldhetsz uzenetet');
+	} else {
+		// Elkuldi az emailt
+		$mail = new SendMail($cleanData->getValidData()); 
+		// Set policy cookie
+		$policy->setCookieIfMessageSent();
+	}
 
 	// vissszairanyit a kezdo oldalra
 	$redirect = new Redirect();
