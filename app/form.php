@@ -15,6 +15,8 @@ if (!empty($_POST)) {
 	
 	$mail = new SendMail($cleanData->getValidData());
 
+	// vissszairanyit a kezdo oldalra
+	$redirect = new Redirect();
 
 	
 } else {
@@ -23,6 +25,4 @@ if (!empty($_POST)) {
 
 
 
-// vissszairanyit a kezdo oldalra
-// $redirect = new Redirect();
 
