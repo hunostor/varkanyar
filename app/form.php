@@ -29,7 +29,7 @@ if (!empty($_POST)) {
 
 	
 } else {
-	die('Nincsennek bekuldott adatok');
+	
 }
 
 
