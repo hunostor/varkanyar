@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Email kuldo class
+ * @return TRUE = ha elment a level
+ *         FALSE = a kuldes nem sikerult
+ */
 class SendMail
 {
 	// a cim ahova az emailt kuldi, most meg csak egy cim adhato meg, kesobb bovitheto lesz
@@ -16,13 +21,17 @@ class SendMail
 	// Email szovege
 	private $message;
 
+	private $sendCheck;
+
 	public function __construct($cleanData)
 	{
 		$this->setName($cleanData);
 		$this->setSubject();
 		$this->setMessage($cleanData);
-		$this->goMail();
+		$this->sendCheck = $this->goMail();
 	}
+
+
 
 	/**
 	 * beallitja a $this->name attributumot ami a kuldo neve
@@ -58,4 +67,14 @@ class SendMail
 	{
 		return mail($this->to[0], $this->subject, $this->message);
 	}
+
+    /**
+     * Gets the value of sendCheck.
+     *
+     * @return boolean
+     */
+    public function getSendCheck()
+    {
+        return $this->sendCheck;
+    }
 }
