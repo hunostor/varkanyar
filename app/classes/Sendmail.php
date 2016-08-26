@@ -21,6 +21,7 @@ class SendMail
 	// Email szovege
 	private $message;
 
+	// Email kudes eredmnye, ha siekres akkor TRUE ha nem sikerult, akkor FALSE
 	private $sendCheck;
 
 	public function __construct($cleanData)
@@ -30,8 +31,6 @@ class SendMail
 		$this->setMessage($cleanData);
 		$this->sendCheck = $this->goMail();
 	}
-
-
 
 	/**
 	 * beallitja a $this->name attributumot ami a kuldo neve
