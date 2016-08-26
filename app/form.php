@@ -2,24 +2,27 @@
 
 require 'bootstrap.php';
 
-if (isset($_POST)) {
+header('Content-Type: text/html; charset=utf-8');
+
+if (!empty($_POST)) {
 	// $_POST adatok tombbe gyujtve
 	$dirtyData = [
 		'name' => $_POST['name'],
 		'email' => $_POST['email'],
 		'message' => $_POST['message'],
 	];
+	$cleanData = new Validate($dirtyData);
+	
+	$mail = new SendMail($cleanData->getValidData());
+
+
+	
+} else {
+	die('Nincsennek bekuldott adatok');
 }
 
 
 
-$cleanData = new Validate($dirtyData);
-$to = 'poroszkai.attila.live.com';
-$subject = 'Hello Mail';
-
-
-
-var_dump($cleanData->getValidData());
 // vissszairanyit a kezdo oldalra
 // $redirect = new Redirect();
 
