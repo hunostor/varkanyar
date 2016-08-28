@@ -1,5 +1,6 @@
 <?php 
- 
+ namespace App\Classes;
+
 /**
  * A spamot elozi meg kulonfele eljarasokkal
  */

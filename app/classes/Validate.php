@@ -1,5 +1,7 @@
 <?php 
 
+namespace App\Classes;
+
 /**
  * Automatikusan validalja a form felol erkezeo array -be gyujtott adatokat
  */

@@ -1,6 +1,7 @@
 <?php 
-require_once 'bootstrap.php';
 session_start();
+require 'bootstrap.php';
+use App\Classes\Policy;
 
 if (!empty($_POST)) {
 	$dirtyData = [

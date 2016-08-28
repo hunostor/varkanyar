@@ -1,8 +1,10 @@
 <?php 
 
 // classes integrate
-require 'classes/Redirect.php';
-require 'classes/Validate.php';
-require 'classes/Sendmail.php';
-require 'classes/Policy.php';
-require 'classes/Alert.php';
+// require 'classes/Redirect.php';
+// require 'classes/Validate.php';
+// require 'classes/Sendmail.php';
+// require 'classes/Policy.php';
+// require 'classes/Alert.php';
+
+require __DIR__ . '/vendor/autoload.php';

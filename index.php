@@ -12,5 +12,5 @@ session_start();
 
 header('Content-Type: text/html; charset=utf-8');
 
-require_once 'vendor/autoload.php';
+require 'app/bootstrap.php';
 require_once 'app/view/template.php';

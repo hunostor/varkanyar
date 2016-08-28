@@ -1,6 +1,6 @@
 <?php 
 
-// define('BASE_URL', 'http://var.app:8000/');
+namespace App\Classes;
 
 /**
  * Atiranyitas class, meg kell adni az url-t, hogy hova  iranyitson $url
