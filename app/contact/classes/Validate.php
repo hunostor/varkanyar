@@ -47,8 +47,7 @@ class Validate
 	/**
 	 * ellenorzi valoban szabalyos email cimet adtak-e meg
 	 * @param  string $email barmi lehet
-	 * @return boolen        true ha valid az emailcim
-	 *                       false ha nem ervenyes
+	 * @return Exception     throw E. ha nem valid
 	 */
 	protected function validateEmail($email)
 	{
