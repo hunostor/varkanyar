@@ -15,9 +15,7 @@ class Validate
 			$this->validData[$key] = $this->removeHtmlTag(($this->removeWhiteSpace($value)));
 		}
 
-		if (! $this->validateEmail ($dirtyDataArray['email'])) {
-			throw new Exception('A megadott emailcím formátuma nem érvényes!');			
-		}
+		$this->validateEmail($dirtyDataArray['email']);
 
 		return $this->validData;
 	}
@@ -55,9 +53,8 @@ class Validate
 	protected function validateEmail($email)
 	{
 		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		  return false;
-		} else {
-			return true;
+		  throw new Exception('A megadott emailcím formátuma nem érvényes!');
+		  return;
 		}
 	}
 
