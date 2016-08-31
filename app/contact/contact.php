@@ -15,8 +15,16 @@ $dirtyDataArray = [
 try {
 	// Adatok validalasa
 	$validData = new Validate($dirtyDataArray);
+	
 	// Email elkuldese az uzenettel
 	$send = new SendMail($validData->getValidData());
+
+	// ha elkuldte az emailt, akkor beallitja a cookiet
+	if ($send->getSendCheck()) {
+		$cookie = new Policy;
+		$cookie->setCookieIfMessageSent();
+	}
+
 } catch (Exception $e) {
 	$alert = new Alert('danger', $e->getMessage());
 	echo $alert->getAlert();
