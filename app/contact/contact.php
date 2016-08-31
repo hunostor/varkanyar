@@ -15,15 +15,16 @@ $dirtyDataArray = [
 try {
 	// Adatok validalasa
 	$validData = new Validate($dirtyDataArray);
-	
+
+	// Spamvedo cookie ellenorzese
+	$cookies = new Policy;
+	$cookies->checkCookie();
+
 	// Email elkuldese az uzenettel
 	$send = new SendMail($validData->getValidData());
 
-	// ha elkuldte az emailt, akkor beallitja a cookiet
-	if ($send->getSendCheck()) {
-		$cookie = new Policy;
-		$cookie->setCookieIfMessageSent();
-	}
+	// beallitja a cookiet
+	$cookies->setCookieIfMessageSent();
 
 } catch (Exception $e) {
 	$alert = new Alert('danger', $e->getMessage());

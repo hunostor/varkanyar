@@ -10,15 +10,30 @@ class Validate
 
 	public function __construct($dirtyDataArray)
 	{	
+		foreach ($dirtyDataArray as $key => $value) {
+			$this->checkEmptyField($key, $value);
+			$this->validData[$key] = $this->removeHtmlTag(($this->removeWhiteSpace($value)));
+		}
+
 		if (! $this->validateEmail ($dirtyDataArray['email'])) {
 			throw new Exception('A megadott emailcím formátuma nem érvényes!');			
 		}
 
-		foreach ($dirtyDataArray as $key => $value) {
-			$this->validData[$key] = $this->removeHtmlTag(($this->removeWhiteSpace($value)));
-		}
-
 		return $this->validData;
+	}
+
+	/**
+	 * ures value erteknel dob egy Exception -t, az ures mezo nevevel
+	 * @param  string $key   form adat kulcsa
+	 * @param  string $value form adata
+	 * @return void          Exceptiont dob
+	 */
+	protected function checkEmptyField($key, $value)
+	{
+		if ($value == '') {
+			throw new Exception($key . ' mezőt is ki kell tölteni!');
+			return;
+		}
 	}
 
 	/**

@@ -1,6 +1,5 @@
 <?php 
- namespace App\Classes;
-
+ 
 /**
  * A spamot elozi meg kulonfele eljarasokkal
  */
@@ -15,16 +14,14 @@ class Policy
 	public function setCookieIfMessageSent()
 	{
 		// 20 percre ballit egy cookiet (1200) = 20 perc
- 		setcookie($this->sentCookieName, 'true', time() + 60); // 1200 = 20 min	}
+ 		return setcookie($this->sentCookieName, 'true', time() + 1200); // 1200 = 20 min	}
 	}
 
 	public function checkCookie()
 	{
 		if (isset($_COOKIE[$this->sentCookieName])) {
 			throw new Exception('Spamvédelmi okokból nem lehet csak 20 percenként új üzenetet küldeni.');
-			return false;		
-		} else {
-			return true;
+			return;
 		}
 	}
 
