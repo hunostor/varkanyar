@@ -2,6 +2,7 @@
 require 'classes/Alert.php';
 require 'classes/Validate.php';
 require 'classes/Sendmail.php';
+require 'classes/Policy.php';
 
 
 $dirtyDataArray = [
