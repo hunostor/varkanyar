@@ -16,4 +16,9 @@ document.getElementById('submit').onclick = function() {
 			$('#contact_feedback').html(data);
 		}
 	});
+	
+	// Form ertekek torlese az elkuldes utan
+	$('#name').val('');
+	$('#email').val('');
+	$('#message').val('');
 }
