@@ -1,7 +1,5 @@
 <?php
 
-namespace App\Classes;
-
 /**
  * Email kuldo class
  * @return TRUE = ha elment a level
