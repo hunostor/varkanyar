@@ -394,7 +394,7 @@ aztán megvalósítom.
 </section>
 <!--TEAM SECTION END-->
 <!--GRID SECTION START-->
-<<!--GRID SECTION END-->
+<!--GRID SECTION END-->
 <!--CONTACT SECTION START-->
 <section id="contact" >
 <div class="container">
@@ -410,33 +410,7 @@ aztán megvalósítom.
 <div class="row animate-in" data-anim-type="fade-in-up">
 
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="contact-wrapper">
-<h3>SZOCIÁLISAK VAGYUNK</h3>
 
-<div class="social-below">
-<form action="form.php" method="post" enctype="multipart/form-data">
-	        
-	        <h1 class="title">Contact</h1>
-	        
-		    <label></label>
-		    <input name="name" required="required" placeholder="Your Name">
-		    
-		            
-		    <label></label>
-		    <input name="email" type="email" required="required" placeholder="Your Email">
-		            
-		    
-		    <label></label>
-		    <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
-		    
-		    		    
-		    <input id="cancel" name="cancel" value="Cancel" />
-		            
-		    <input id="submit" name="submit" type="submit" value="Submit">
-	        
-	    </form>
-</div>
-</div>
 
 </div>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -463,7 +437,44 @@ aztán megvalósítom.
 </div>
 
 
+
+<!-- Contact Form -->
+	<div class="row animate-in" data-anim-type="fade-in-up">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="contact-wrapper">
+	<h3>SZOCIÁLISAK VAGYUNK</h3>
+
+	<div class="social-below">
+	
+<form action="app/form.php" method="post" enctype="multipart/form-data">
+		        
+        <h1 class="title">Kapcsolat</h1>
+    
+        
+		<div class="form-group">
+	    <label for="name">Név</label>
+	    <input type="text" class="form-control" id="name" name="name" placeholder="Név" required="required">
+	  </div>
+	  <div class="form-group">
+	    <label for="email">Email</label>
+	    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required">
+	  </div>
+	  <div class="form-group">
+	    <label for="message">Üzenet</label>
+	    <textarea class="form-control" rows="4" id="message" name="message" required="required"></textarea>
+	  </div>
+	  
+	  <input id="submit" name="submit" type="submit" value="Üzenet elküldése">
+	  <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+
+</form>
+	</div>
 </div>
+
+</div>
+</div>
+</div>
+<!-- Contact Form END -->
 </section>
 
 <!--CONTACT SECTION END-->
